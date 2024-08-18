@@ -1,0 +1,276 @@
+* {
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  box-sizing: border-box; /* Adiciona a borda e o preenchimento ao tamanho total do elemento */
+  list-style: none; /* Remove as marcas de lista padrão */
+  text-decoration: none; /* Remove a sublinha padrão dos links */
+}	
+
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+  ::-webkit-scrollbar-thumb {
+    background: #BB363D; /* Cor do botão de rolagem */
+    border-radius: 10px; /* Borda arredondada do botão de rolagem */
+  }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a; /* Cor da barra de rolagem */
+   }
+
+/* Estilos gerais */
+
+html, body {
+  font-family: Arial, sans-serif; /* Define uma fonte padrão para todo o documento */
+  background-color: #1a1a1a; /* Define uma cor de fundo escura para a página */
+  color: #ffffff; /* Define a cor do texto como branca */
+  height: 100%; /* Garante que a altura ocupe 100% da janela */
+}
+
+img {
+  max-width: 100%; /* Assegura que a imagem nunca ultrapasse a largura do contêiner */
+  height: auto; /* Mantém a proporção original da imagem */
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+}
+
+/* Estilo do cabeçalho */
+header {
+  margin: 10px; /* Adiciona margem ao redor do cabeçalho */
+  display: flex; /* Usa Flexbox para alinhar os itens no cabeçalho */
+  justify-content: space-between; /* Espaça os itens do cabeçalho igualmente, um em cada extremidade */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para o cabeçalho */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao cabeçalho */
+}
+
+.logo {
+  display: flex; /* Usa Flexbox para alinhar a logo e o nome do site horizontalmente */
+  align-items: center; /* Alinha verticalmente ao centro os itens da logo */
+  gap: 10px; /* Define um espaço de 10px entre a logo e o nome do site */
+}
+
+.logo img {
+  width: 50px; /* Define a largura da imagem da logo */
+  height: 50px; /* Define a altura da imagem da logo */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para o efeito de escala */
+}
+
+.site-name {
+  font-size: 1.5em; /* Define o tamanho da fonte do nome do site */
+  font-weight: bold; /* Torna o nome do site em negrito */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para o efeito de escala */
+}
+
+/* Efeito de aumento ao passar o mouse */
+.logo img:hover, .site-name:hover {
+  transform: scale(1.1); /* Aumenta a logo e o nome do site em 10% ao passar o mouse */
+}
+
+/* Estilo da navegação */
+nav {
+  margin: 10px; /* Adiciona margem ao redor da navegação */
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para a navegação */
+  padding: 10px; /* Adiciona espaçamento interno à navegação */
+  border-radius: 10px; /* Adiciona bordas arredondadas à navegação */
+}
+
+nav ul {
+  list-style: none; /* Remove as marcas de lista padrão dos itens de navegação */
+  display: flex; /* Usa Flexbox para alinhar horizontalmente os links de navegação */
+  gap: 20px; /* Define um espaço de 20px entre os links de navegação */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove a sublinha padrão dos links */
+  color: white; /* Define a cor do texto dos links como branca */
+  font-size: 1em; /* Define o tamanho da fonte dos links */
+  transition: color 0.3s ease-in-out; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+/* Mudança de cor ao passar o mouse */
+nav ul li a:hover {
+  color: #ffcc00; /* Muda a cor do texto dos links para amarelo ao passar o mouse */
+}
+
+/* Estilo do corpo */
+.corpo {
+  padding: 20px;  /* Adiciona espaçamento interno ao corpo */
+}
+
+h1 {
+  font-size: 2em; /* Define o tamanho da fonte do título principal */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao título principal */
+}
+
+p {
+  font-size: 1.2em; /* Define o tamanho da fonte do texto */
+  line-height: 1.6; /* Define a altura da linha do texto */
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 500px; /* Define a largura da imagem do banner como 100% */
+  border-radius: 10px; /* Adiciona bordas arredondadas à imagem do banner */
+}
+
+.banner > a {
+  background-color:#2B2D25; /* Define uma cor de fundo laranja para o link */
+  color: white; /* Define a cor do texto do link como branca */
+  font-size: 1.2em; /* Define o tamanho da fonte do link */
+  margin: 20px; /* Adiciona margem ao redor do link */
+  padding: 10px 20px; /* Adiciona espaçamento interno ao link */
+  text-align: center;
+  border-radius: 10px; /* Adiciona bordas arredondadas ao link */
+}
+
+.banner > a:hover {
+  opacity: 0.8; /* Diminui a opacidade do banner ao passar o mouse */
+}
+
+.banner > a:active {
+  opacity: 1; /* Mantém a opacidade do banner ao clicar */
+  color: white; /* Mantém a cor do texto do link como branca ao clicar */
+}
+
+.banner > a:visited {
+  color: white; /* Define a cor do texto do link visitado como branca */
+}
+
+.banner h3 {
+  font-size: 2em; /* Define o tamanho da fonte do título do banner */
+  color: white; /* Define a cor do texto do título do banner como branca */
+  text-align: center; /* Alinha o texto centralmente no banner */
+  margin: 20px; /* Adiciona margem ao redor do título do banner */
+}
+
+.banner h3:hover {
+  text-decoration: underline; /* Adiciona uma sublinha ao título do banner ao passar o mouse */
+}
+
+/* Estilo da seção "about" */
+.about {
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para a seção "about" */
+  padding: 20px; /* Adiciona espaçamento interno à seção "about" */
+  border-radius: 10px; /* Adiciona bordas arredondadas à seção "about" */
+  display: flex; /* Usa Flexbox para alinhar os itens centralmente */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  text-align: center; /* Alinha o texto centralmente */
+  color: #ffffff; /* Define a cor do texto como branca */
+}
+.about img{
+  width: 200px; /* Define a largura da imagem do perfil */
+  height: 200px; /* Define a altura da imagem do perfil */
+  border-radius: 50%; /* Adiciona bordas arredondadas à imagem do perfil */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px à imagem do perfil */
+}
+
+.about h2 {
+  font-size: 2em; /* Define o tamanho da fonte do título */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao título */
+}
+
+.about p {
+  width: 70%; /* Define a largura do texto como 80% do contêiner */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px ao texto */
+  text-align: justify;
+  background-color: #00000041; /* Define uma cor de fundo escura para o texto */
+  padding: 20px; /* Adiciona espaçamento interno ao texto */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao texto */
+  font-size: 1.2em; /* Define o tamanho da fonte do texto */
+  line-height: 1.6; /* Define a altura da linha do texto */
+}
+
+.about a {
+  color: #ff7e5f; /* Define a cor do link como laranja */
+  text-decoration: none; /* Remove a sublinha padrão do link */
+  transition: color 0.3s ease-in-out; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.about a:hover {
+  color: #ffcc00; /* Muda a cor do link para amarelo ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo das seções */
+.form-contact {
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para a seção de formulário de contato */
+  padding: 20px; /* Adiciona espaçamento interno à seção de formulário de contato */
+  border-radius: 10px; /* Adiciona bordas arredondadas à seção de formulário de contato */
+  width: 600px ; /* Define a largura da seção de formulário de contato como 100% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-contact input {
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao campo de entrada */
+  padding: 10px; /* Adiciona espaçamento interno ao campo de entrada */
+  border: none; /* Remove a borda padrão do campo de entrada */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao campo de entrada */
+}
+
+.form-contact textarea {
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px à área de texto */
+  padding: 10px; /* Adiciona espaçamento interno à área de texto */
+  border: none; /* Remove a borda padrão da área de texto */
+  border-radius: 5px; /* Adiciona bordas arredondadas à área de texto */
+}
+
+.form-contact button {
+  padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+  background-color: #ff7e5f; /* Define uma cor de fundo laranja para o botão */
+  color: white; /* Define a cor do texto do botão como branca */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse sobre o botão */
+  transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center; /* Alinha o texto centralmente no rodapé */
+  padding: 20px; /* Adiciona espaçamento interno ao rodapé */
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para o rodapé */
+  border-radius: 0 0 10px 10px; /* Adiciona bordas arredondadas apenas na parte inferior do rodapé */
+}
+
+/* Estilo do link no rodapé */
+footer a {
+  color: #ffffff; /* Define a cor do texto do link como branca */
+  text-decoration: none; /* Remove a sublinha padrão do link */
+  transition: color 0.3s ease-in-out; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+/* Mudança de cor ao passar o mouse */
+footer a:hover {
+  color: #ff7e5f; /* Muda a cor do texto do link para laranja ao passar o mouse */
+}
+
+/* Mudança de cor ao clicar no link */
+footer a:active {
+  color: #ff7e5f; /* Mantém a cor do texto do link como laranja ao clicar */
+}
