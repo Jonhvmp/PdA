@@ -250,7 +250,7 @@ p {
 
 .service-card:hover {
   transform: scale(1.1); /* Aumenta o tamanho do card em 10% ao passar o mouse */
-  background: linear-gradient(to bottom, #1a1a1a, #2b2b2b, #2B2D25); /* Muda a cor de fundo do card para preto ao passar o mouse */
+  background: linear-gradient(to bottom, #1a1a1a, #2b2b2b, #2b2d2500); /* Muda a cor de fundo do card para preto ao passar o mouse */
 }
 
 .service-card h3 {
