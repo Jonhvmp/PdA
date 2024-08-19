@@ -205,15 +205,97 @@ p {
   color: #ffcc00; /* Muda a cor do link para amarelo ao passar o mouse */
 }
 
+/* Estilo da seção "services" */
+.services {
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para a seção "services" */
+  padding: 20px; /* Adiciona espaçamento interno à seção "services" */
+  border-radius: 10px; /* Adiciona bordas arredondadas à seção "services" */
+  display: flex; /* Usa Flexbox para alinhar os itens centralmente */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  text-align: center; /* Alinha o texto centralmente */
+  color: #ffffff; /* Define a cor do texto como branca */
+}
 
+.services > h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
 
+.services h3 {
+  font-size: 1.5em; /* Define o tamanho da fonte do subtítulo */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao subtítulo */
+}
 
+.service-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.service-card {
+  background-color: #00000041;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 0.4s ease-in-out; /* Adiciona uma transição suave para o efeito de escala */
+}
 
+.service-card:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do card em 10% ao passar o mouse */
+  background: linear-gradient(to bottom, #1a1a1a, #2b2b2b, #2B2D25); /* Muda a cor de fundo do card para preto ao passar o mouse */
+}
 
+.service-card h3 {
+  font-size: 1.5em; /* Define o tamanho da fonte do título do card */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao título do card */
+}
 
+.services p {
+  width: 70%; /* Define a largura do texto como 80% do contêiner */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px ao texto */
+  text-align: center;
+  background-color: #00000041; /* Define uma cor de fundo escura para o texto */
+  padding: 20px; /* Adiciona espaçamento interno ao texto */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao texto */
+  font-size: 1.2em; /* Define o tamanho da fonte do texto */
+  line-height: 1.6; /* Define a altura da linha do texto */
+}
 
+/* Estilo da seção "contact" */
+.contact {
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para a seção "contact" */
+  padding: 20px; /* Adiciona espaçamento interno à seção "contact" */
+  border-radius: 10px; /* Adiciona bordas arredondadas à seção "contact" */
+  display: flex; /* Usa Flexbox para alinhar os itens centralmente */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  text-align: center; /* Alinha o texto centralmente */
+  color: #ffffff; /* Define a cor do texto como branca */
+}
 
+.contact h2 {
+  font-size: 2em; /* Define o tamanho da fonte do título */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao título */
+}
+
+.contact p {
+  width: 70%; /* Define a largura do texto como 80% do contêiner */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px ao texto */
+  text-align: justify;
+  background-color: #00000041; /* Define uma cor de fundo escura para o texto */
+  padding: 20px; /* Adiciona espaçamento interno ao texto */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao texto */
+  font-size: 1.2em; /* Define o tamanho da fonte do texto */
+  line-height: 1.6; /* Define a altura da linha do texto */
+}
 
 /* Estilo das seções */
 .form-contact {
@@ -244,10 +326,70 @@ p {
   padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
   border: none; /* Remove a borda padrão do botão */
   border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
-  background-color: #ff7e5f; /* Define uma cor de fundo laranja para o botão */
+  background-color: #ff0000be; /* Define uma cor de fundo laranja para o botão */
   color: white; /* Define a cor do texto do botão como branca */
   cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse sobre o botão */
   transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+.form-contact button:hover {
+  background-color: #000000; /* Muda a cor de fundo do botão para laranja ao passar o mouse */
+  color: rgb(255, 255, 255) ; /* Define a cor do texto do botão como branca ao passar o mouse */
+}
+
+/* Estilo do newsletter */
+.newsletter {
+  background-color: #2b2b2b; /* Define uma cor de fundo escura para a seção de newsletter */
+  padding: 20px; /* Adiciona espaçamento interno à seção de newsletter */
+  border-radius: 10px; /* Adiciona bordas arredondadas à seção de newsletter */
+  display: flex; /* Usa Flexbox para alinhar os itens centralmente */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  text-align: center; /* Alinha o texto centralmente */
+  color: #ffffff; /* Define a cor do texto como branca */
+}
+
+.newsletter h2 {
+  font-size: 2em; /* Define o tamanho da fonte do título */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px ao título */
+}
+
+.newsletter p {
+  width: 70%; /* Define a largura do texto como 80% do contêiner */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px ao texto */
+  text-align: center;
+  background-color: #00000041; /* Define uma cor de fundo escura para o texto */
+  padding: 20px; /* Adiciona espaçamento interno ao texto */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao texto */
+  font-size: 1.2em; /* Define o tamanho da fonte do texto */
+  line-height: 1.6; /* Define a altura da linha do texto */
+}
+
+.newsletter form {
+  display: flex; /* Usa Flexbox para alinhar os itens centralmente */
+  gap: 10px; /* Define um espaço de 10px entre os itens do formulário */
+}
+
+.newsletter input {
+  padding: 10px; /* Adiciona espaçamento interno ao campo de entrada */
+  border: none; /* Remove a borda padrão do campo de entrada */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao campo de entrada */
+}
+
+.newsletter button {
+  padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+  margin: 10px;
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+  background-color: #ff0000be; /* Define uma cor de fundo laranja para o botão */
+  color: white; /* Define a cor do texto do botão como branca */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse sobre o botão */
+  transition: background-color 0.3s ease-in-out ; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+.newsletter button:hover {
+  background-color: #000000; /* Muda a cor de fundo do botão para laranja ao passar o mouse */
+  color: rgb(255, 255, 255) ; /* Define a cor do texto do botão como branca ao passar o mouse */
 }
 
 /* Estilo do rodapé */
