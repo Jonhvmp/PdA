@@ -22,6 +22,10 @@
 
 /* Estilos gerais */
 
+section {
+  margin: 20px;
+}
+
 html, body {
   font-family: Arial, sans-serif; /* Define uma fonte padrão para todo o documento */
   background-color: #1a1a1a; /* Define uma cor de fundo escura para a página */
