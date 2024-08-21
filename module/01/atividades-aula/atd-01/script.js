@@ -20,3 +20,25 @@ var diasSemana2 = 7 - 3; // 7 - 3 = 4, onde 3 é o dia da semana atual (quarta-f
 
 // Exibindo o resultado
 console.log("Faltam " + diasSemana2 + " dias para terminar a semana.");
+
+// Função para calcular a idade
+function calcularIdade(anoNascimento) {
+  // Obtendo o ano atual usando a função Date
+  const anoAtual = new Date().getFullYear();  // Date().getFullYear() retorna o ano atual (2024)
+
+  // Calculando a idade
+  const idade = anoAtual - anoNascimento;
+
+  // Retornando a idade calculada
+  return idade;
+}
+
+// Declarando a variável com o ano de nascimento do usuário
+var nameUser = "Jonh"; // Exemplo de nome de usuário
+const anoNascimentoUsuario = 2004; // Exemplo de ano de nascimento
+
+// Chamando a função calcularIdade e armazenando o resultado em uma variável
+const idadeUsuario = calcularIdade(anoNascimentoUsuario); // 2024 - 2004 = 20
+
+// Exibindo a idade do usuário no console
+console.log("A idade do usuário " + nameUser + " é: " + idadeUsuario + " anos.");
