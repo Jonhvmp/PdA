@@ -173,6 +173,8 @@ function realizarCompra(saldo, valorCompra){
    return saldo >= valorCompra;
 }
 
+
+
 var saldo = 2000;
 var valorCompra = 1900;
 
