@@ -80,6 +80,7 @@ if (blusa < tenis) {
 // if = se
 // else = senão
 // else if = senão se
+
 // switch = escolha
 // while = enquanto
 // do while = faça enquanto
@@ -154,7 +155,7 @@ function podeComprar(saldo, valorProduto){ // função que verifica se o saldo �
 var saldo = 2000;
 var valorProduto = 1900;
 
-if (podeComprar(saldo, valorProduto)){
+if (podeComprar(saldo, valorProduto)){ // reutilizo a função para a lógica "pode comprar"
   console.log("Compra realizada com sucesso");
 } else {
   console.log("Saldo insuficiente");
