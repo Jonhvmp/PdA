@@ -57,14 +57,16 @@ formulario.addEventListener('submit', (e) => {
 
     // Define a mensagem de aprovação ou reprovação
     let mensagem = `Olá ${nome}, sua média final é: ${media.toLocaleString('pt-BR', {minimumFractionDigits: 2})}.`;
-    if (media >= 7) {
-        mensagem += ` Você foi <strong>aprovado(a)</strong>!`;
-        // Adiciona a classe "aprovado" ao elemento "resultado"
-        resultado.classList.add('aprovado');
-    } else {
+    if (media < 7) {
         mensagem += ` Você foi <strong>reprovado(a)</strong>.`;
         // Adiciona a classe "reprovado" ao elemento "resultado"
+        resultado.classList.remove('aprovado');
         resultado.classList.add('reprovado');
+    } else {
+        mensagem += ` Você foi <strong>aprovado(a)</strong>.`;
+        // Adiciona a classe "reprovado" ao elemento "resultado"
+        resultado.classList.remove('reprovado');
+        resultado.classList.add('aprovado');
     }
 
     // Exibe a mensagem com efeitos visuais
