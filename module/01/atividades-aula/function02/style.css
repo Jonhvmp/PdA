@@ -1,0 +1,54 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2em;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 2em;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.oculto {
+  display: none;
+}
+
+.par {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.impar {
+  background-color: #FF5722;
+  color: white;
+}
